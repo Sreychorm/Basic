@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <!--Main Navigation-->
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+                    <strong class="blue-text">MDB</strong>
+                </a>
+
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link waves-effect" href="#">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">About MDB</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect" href="https://mdbootstrap.com/getting-started/" target="_blank">Free download</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank">Free tutorials</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="text-center">
+                                <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#elegantModalForm">
+                                 Login 
+                                </a>
+                                <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#RegisterModalForm">
+                                Register
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+    </header>
+    <!--Main Navigation-->
+
+    <!-- Modal Log In-->
+    <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <!--Content-->
+    <div class="modal-content form-elegant">
+        <!--Header-->
+        <div class="modal-header text-center">
+        <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Sign in</strong></h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body mx-4">
+        <!--Body-->
+        <div class="md-form mb-5">
+            <input type="email" id="Form-email1" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+        </div>
+
+        <div class="md-form pb-3">
+            <input type="password" id="Form-pass1" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+            <p class="font-small blue-text d-flex justify-content-end">Forgot <a href="#" class="blue-text ml-1">
+                Password?</a></p>
+        </div>
+
+        <div class="text-center mb-3">
+            <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
+        </div>
+        <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
+            with:</p>
+
+        <div class="row my-3 d-flex justify-content-center">
+            <!--Facebook-->
+            <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
+            <!--Twitter-->
+            <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-twitter"></i></button>
+            <!--Google +-->
+            <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"></i></button>
+        </div>
+        </div>
+        <!--Footer-->
+        <div class="modal-footer mx-5 pt-3 mb-1">
+        <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="" class="blue-text ml-1" >
+            Sign Up</a></p>
+        </div>
+    </div>
+    <!--/.Content-->
+    </div>
+    </div>
+<!-- Modal -->
+<!-- Model Register -->
+<div class="modal fade" id="RegisterModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <!--Content-->
+    <div class="modal-content form-elegant">
+        <!--Header-->
+        <div class="modal-header text-center">
+        <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Sign in</strong></h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body mx-4">
+        <!--Body-->
+        <div class="md-form mb-5">
+            <input type="email" id="Form-email1" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="Form-email1">Your Name</label>
+        </div>
+
+        <div class="md-form mb-5">
+            <input type="email" id="Form-email1" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+        </div>
+
+        <div class="md-form pb-3">
+            <input type="password" id="Form-pass1" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="Form-pass1">Your password</label>
+        </div>
+
+        <div class="text-center mb-3">
+            <button type="button" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Comform</button>
+        </div>
+        <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in
+            with:</p>
+
+        <div class="row my-3 d-flex justify-content-center">
+            <!--Facebook-->
+            <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
+            <!--Twitter-->
+            <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fab fa-twitter"></i></button>
+            <!--Google +-->
+            <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fab fa-google-plus-g"></i></button>
+        </div>
+        </div>
+        <!--Footer-->
+        <div class="modal-footer mx-5 pt-3 mb-1">
+        <p class="font-small grey-text d-flex justify-content-end"> <a href="#" class="blue-text ml-1">
+            Log In</a></p>
+        </div>
+    </div>
+    <!--/.Content-->
+    </div>
+    </div>
+    <!--Main layout-->
+    <main class="mt-5 pt-5">
+        <div class="container">
+
+            <!--Section: Jumbotron-->
+            <section class="card wow fadeIn" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/background3.jpg);">
+
+                <!-- Content -->
+                <div class="card-body text-white text-center py-5 px-5 my-5">
+
+                    <h1 class="mb-4">
+                        <strong>Learn Bootstrap 4 with MDB</strong>
+                    </h1>
+                    <p>
+                        <strong>Best & free guide of responsive web design</strong>
+                    </p>
+                    <p class="mb-4">
+                        <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written
+                            versions available. Create your own, stunning website.</strong>
+                    </p>
+                    <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
+                        <i class="fas fa-graduation-cap ml-2"></i>
+                    </a>
+
+                </div>
+                <!-- Content -->
+            </section>
+            <!--Section: Jumbotron-->
+
+            <hr class="my-5">
+
+            <!--Section: Magazine v.1-->
+            <section class="wow fadeIn">
+
+                <!--Section heading-->
+                <h2 class="h1 text-center my-5 font-weight-bold">Magazine NewsFeed</h2>
+
+                <!--Grid row-->
+                <div class="row text-left">
+
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12">
+
+                        <!--Image-->
+                        <div class="view overlay rounded z-depth-1-half mb-3">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/77.jpg" class="img-fluid" alt="Sample post image">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Excerpt-->
+                        <div class="news-data">
+                            <a href="" class="light-blue-text">
+                                <h6>
+                                    <i class="fas fa-plane"></i>
+                                    <strong> Travels</strong>
+                                </h6>
+                            </a>
+                            <p>
+                                <strong>
+                                    <i class="fa fa-clock-o"></i> 20/08/2018</strong>
+                            </p>
+                        </div>
+                        <h3>
+                            <a>
+                                <strong>This is title of the news</strong>
+                            </a>
+                        </h3>
+                        <p> Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                        </p>
+
+                        <!--/Featured news-->
+
+                        <hr>
+
+                        <!--Small news-->
+                        <div class="row">
+                            <div class="col-md-3">
+
+                                <!--Image-->
+                                <div class="view overlay rounded z-depth-1">
+                                    <img src="https://mdbootstrap.com/img/Photos/Others/photo8.jpg" class="img-fluid" alt="Minor sample post image">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--Excerpt-->
+                            <div class="col-md-9">
+                                <p class="dark-grey-text">
+                                    <strong>19/08/2018</strong>
+                                </p>
+                                <a>Lorem ipsum dolor sit amet
+                                    <i class="fa fa-angle-right float-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!--/Small news-->
+
+                        <hr>
+
+                        <!--Small news-->
+                        <div class="row">
+                            <div class="col-md-3">
+
+                                <!--Image-->
+                                <div class="view overlay rounded z-depth-1">
+                                    <img src="https://mdbootstrap.com/img/Photos/Others/images/54.jpg" class="img-fluid" alt="Minor sample post image">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--Excerpt-->
+                            <div class="col-md-9">
+                                <p class="dark-grey-text">
+                                    <strong>18/08/2018</strong>
+                                </p>
+                                <a>Soluta nobis est eligendi
+                                    <i class="fa fa-angle-right float-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!--/Small news-->
+
+                        <hr>
+
+                        <!--Small news-->
+                        <div class="row">
+                            <div class="col-md-3">
+
+                                <!--Image-->
+                                <div class="view overlay rounded z-depth-1">
+                                    <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="img-fluid" alt="Minor sample post image">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--Excerpt-->
+                            <div class="col-md-9">
+                                <p class="dark-grey-text">
+                                    <strong>17/08/2018</strong>
+                                </p>
+                                <a>Voluptatem accusantium doloremque
+                                    <i class="fa fa-angle-right float-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!--/Small news-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-6 col-md-12">
+
+                        <!--Image-->
+                        <div class="view overlay rounded z-depth-1-half mb-3">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/32.jpg" class="img-fluid" alt="Sample post image">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Excerpt-->
+                        <div class="news-data">
+                            <a href="" class="light-blue-text">
+                                <h6>
+                                    <i class="fa fa-plane"></i>
+                                    <strong> Travels</strong>
+                                </h6>
+                            </a>
+                            <p>
+                                <strong>
+                                    <i class="fa fa-clock-o"></i> 20/08/2018</strong>
+                            </p>
+                        </div>
+                        <h3>
+                            <a>
+                                <strong>This is title of the news</strong>
+                            </a>
+                        </h3>
+                        <p> Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                        </p>
+
+                        <!--/Featured news-->
+
+                        <hr>
+
+                        <!--Small news-->
+                        <div class="row">
+                            <div class="col-md-3">
+
+                                <!--Image-->
+                                <div class="view overlay rounded z-depth-1">
+                                    <img src="https://mdbootstrap.com/img/Photos/Others/photo11.jpg" class="img-fluid" alt="Minor sample post image">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--Excerpt-->
+                            <div class="col-md-9">
+                                <p class="dark-grey-text">
+                                    <strong>19/08/2018</strong>
+                                </p>
+                                <a>Lorem ipsum dolor sit amet
+                                    <i class="fa fa-angle-right float-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!--/Small news-->
+
+                        <hr>
+
+                        <!--Small news-->
+                        <div class="row">
+                            <div class="col-md-3">
+
+                                <!--Image-->
+                                <div class="view overlay rounded z-depth-1">
+                                    <img src="https://mdbootstrap.com/img/Photos/Others/images/51.jpg" class="img-fluid" alt="Minor sample post image">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--Excerpt-->
+                            <div class="col-md-9">
+                                <p class="dark-grey-text">
+                                    <strong>18/08/2018</strong>
+                                </p>
+                                <a>Soluta nobis est eligendi
+                                    <i class="fa fa-angle-right float-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!--/Small news-->
+
+                        <hr>
+
+                        <!--Small news-->
+                        <div class="row">
+                            <div class="col-md-3">
+
+                                <!--Image-->
+                                <div class="view overlay rounded z-depth-1">
+                                    <img src="https://mdbootstrap.com/img/Photos/Others/images/44.jpg" class="img-fluid" alt="Minor sample post image">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--Excerpt-->
+                            <div class="col-md-9">
+                                <p class="dark-grey-text">
+                                    <strong>17/08/2018</strong>
+                                </p>
+                                <a>Voluptatem accusantium doloremque
+                                    <i class="fa fa-angle-right float-right"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!--/Small news-->
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--/Section: Magazine v.1-->
+
+
+        </div>
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
+
+        <!--Call to action-->
+        <div class="pt-4">
+            <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Download MDB
+                <i class="fa fa-download ml-2"></i>
+            </a>
+            <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Start free tutorial
+                <i class="fa fa-graduation-cap ml-2"></i>
+            </a>
+        </div>
+        <!--/.Call to action-->
+
+        <hr class="my-4">
+
+        <!-- Social icons -->
+        <div class="pb-4">
+            <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+                <i class="fab fa-facebook-f mr-3"></i>
+            </a>
+
+            <a href="https://twitter.com/MDBootstrap" target="_blank">
+                <i class="fab fa-twitter mr-3"></i>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+                <i class="fab fa-youtube mr-3"></i>
+            </a>
+
+            <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+                <i class="fab fa-google-plus mr-3"></i>
+            </a>
+
+            <a href="https://dribbble.com/mdbootstrap" target="_blank">
+                <i class="fab fa-dribbble mr-3"></i>
+            </a>
+
+            <a href="https://pinterest.com/mdbootstrap" target="_blank">
+                <i class="fab fa-pinterest mr-3"></i>
+            </a>
+
+            <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+                <i class="fab fa-github mr-3"></i>
+            </a>
+
+            <a href="http://codepen.io/mdbootstrap/" target="_blank">
+                <i class="fab fa-codepen mr-3"></i>
+            </a>
+        </div>
+        <!-- Social icons -->
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3">
+            © 2018 Copyright:
+            <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap.com </a>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+
+</body>
+</html>
